@@ -10,15 +10,18 @@ function UsersList() {
         dispatch(getUsers())
     }
     useEffect(getall,[])
-const userss=useSelector((state)=>state.users.users)
+const userss=useSelector((state)=>state.users)
 console.log(userss,"asiiiiiia")
   return (
-    <div>
+    <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap"}}>
+  
 {
-    userss && userss.map((el)=>
-       <UserCard el={el}/>
-    )
-}    </div>
+  userss.map((el)=>(
+    <UserCard el={el}/>
+  ))
+}
+
+   </div>
   )
 }
 

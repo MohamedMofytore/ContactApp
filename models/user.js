@@ -9,15 +9,25 @@ const userSchema=new schema({
     email:{
         type:String
     },
-    phone:{
-        type:Number
+    lastName:{
+        type:String
+    },
+    password:{
+        type:String
+    },
+    isAdmin:{
+        type:Boolean,
+        default:false
+    },
+    profession:{
+        type:String
     }
 })
 
 
 
 
-const User = mongoose.model("User", userSchema); 
+const User = mongoose.model("mahmo", userSchema); 
 
 module.exports = User;
 

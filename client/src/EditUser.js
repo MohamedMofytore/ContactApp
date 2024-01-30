@@ -19,9 +19,9 @@ function EditUser({el}) {
     }
   return (
     <div>
-       <Button color="danger" onClick={toggle}>
+       <button color="danger" className="user-card-button" onClick={toggle}>
        edit
-      </Button>
+      </button>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Modal title</ModalHeader>
         <ModalBody>
